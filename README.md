@@ -6,13 +6,13 @@
 
 ## 常用入口
 
-- [中文官网](https://secrethhh.github.io/lab-website/) · [English](https://secrethhh.github.io/lab-website/en/)
-- [GitHub 仓库](https://github.com/Secrethhh/lab-website)
+- [中文官网](https://whu-mmslab.github.io/) · [English](https://whu-mmslab.github.io/en/)
+- [GitHub 仓库](https://github.com/whu-mmslab/whu-mmslab.github.io)
 - [Pages CMS 在线编辑](https://app.pagescms.org)
-- [Actions 发布记录](https://github.com/Secrethhh/lab-website/actions)
+- [Actions 发布记录](https://github.com/whu-mmslab/whu-mmslab.github.io/actions)
 - [搜索收录与账号验证说明](docs/search-indexing.md)
 
-## 当前状态（2026-10-15 核对）
+## 当前状态（2026-10-26 核对）
 
 | 项目 | 当前情况 |
 |---|---|
@@ -42,7 +42,7 @@
 
 1. 登录 Pages CMS，使用拥有仓库编辑权限的 GitHub 账号。
 2. 首次使用按平台提示授权 GitHub App，范围限定为本仓库。
-3. 打开 `Secrethhh/lab-website` 的 `main` 分支。
+3. 打开 `whu-mmslab/whu-mmslab.github.io` 的 `main` 分支。
 4. 选择“团队人数”“首页 News（2026 年）”“任延珍老师个人介绍”或“论文与成果”。
 
 表单由 `.pages.yml` 配置；已提供配置不代表个人账号已授权。也可以直接在 GitHub 编辑对应文件并提交。不要共享个人密码。
@@ -152,7 +152,7 @@ CMS 对应 `src/_data/faculty.json`，维护职称、邮箱、履历栏目、中
 | `scripts/validate.mjs` | 发布前资料校验 |
 | `scripts/localize.mjs`、`scripts/seo.mjs` | 英文页面、搜索元信息与站点地图生成 |
 | `src/_data/searchVerification.json` | 搜索平台公开验证标签；当前空值表示未配置验证 |
-| `docs/search-indexing.md` | 搜索收录步骤与域名根目录 robots.txt 限制 |
+| `docs/search-indexing.md` | 搜索收录步骤与根目录 robots.txt 说明 |
 | `.pages.yml` | CMS 表单字段 |
 | `.github/workflows/pages.yml` | 自动构建与部署 |
 | `_site/` | 生成结果，不直接修改或提交 |

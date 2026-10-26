@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 
-const base = 'https://secrethhh.github.io/lab-website/';
+const base = 'https://whu-mmslab.github.io/';
 const escape = s => s.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;');
 export function generateSeo() {
   const verification = JSON.parse(fs.readFileSync('src/_data/searchVerification.json', 'utf8'));
@@ -14,6 +14,7 @@ export function generateSeo() {
     '任延珍教授团队（MMSLAB 多媒体安全实验室）依托武汉大学国家网络安全学院，研究语音与视频安全、深度伪造检测、信息隐藏与隐写分析。了解团队介绍、论文成果及开放代码与数据集。',
     'MMSLAB is Professor Yanzhen Ren’s research team at the School of Cyber Science and Engineering, Wuhan University. Explore audio and video security, deepfake detection, information hiding, publications, code and datasets.'
   ];
+  fs.writeFileSync('_site/robots.txt', 'User-agent: *\nAllow: /\nSitemap: ' + base + 'sitemap.xml\n');
   const urls = [];
   for (const [file, titles] of Object.entries(pages)) for (const en of [false, true]) {
     const prefix = en ? 'en/' : '';
