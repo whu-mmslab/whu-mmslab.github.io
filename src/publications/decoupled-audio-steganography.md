@@ -12,7 +12,7 @@ figureAlt: Decoupled audio steganography framework with sender-side neural
 figureSource: Original paper PDF supplied by the team, Figure 1, PDF page 4
 summary: Studies decoupled neural audio steganography that supports adaptive
   model updates at the sender.
-featured: false
+featured: true
 draft: false
 paper: https://doi.org/10.1109/TIFS.2026.3694658
 datasets:
