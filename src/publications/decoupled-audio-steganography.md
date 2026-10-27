@@ -5,24 +5,21 @@ direction: hiding
 modality: audio
 venue: TIFS
 status: Published
-authors: 'Yanan Li, Qiyang Xiao, Mingxi Zhang, Yanzhen Ren, Lina Wang'
-summary: >-
-  Studies decoupled neural audio steganography that supports adaptive model
-  updates at the sender.
-featured: true
+authors: Yanan Li, Qiyang Xiao, Mingxi Zhang, Yanzhen Ren, Lina Wang
+figure: /assets/papers/decoupled-audio-steganography.webp
+figureAlt: Decoupled audio steganography framework with sender-side neural
+  restoration, public transmission and receiver-side message extraction.
+figureSource: Original paper PDF supplied by the team, Figure 1, PDF page 4
+summary: Studies decoupled neural audio steganography that supports adaptive
+  model updates at the sender.
+featured: false
 draft: false
-paper: 'https://doi.org/10.1109/TIFS.2026.3694658'
-code: ''
-data: ''
+paper: https://doi.org/10.1109/TIFS.2026.3694658
 datasets:
   - name: VCTK-Corpus
     url: https://huggingface.co/datasets/badayvedat/VCTK
   - name: MUSDB18-HQ
     url: https://zenodo.org/records/3338373
-source: 'https://doi.org/10.1109/TIFS.2026.3694658'
-figure: /assets/papers/decoupled-audio-steganography.webp
-figureAlt: 'Decoupled audio steganography framework with sender-side neural restoration, public transmission and receiver-side message extraction.'
-figureSource: 'Original paper PDF supplied by the team, Figure 1, PDF page 4'
+source: https://doi.org/10.1109/TIFS.2026.3694658
 ---
-
 Studies decoupled neural audio steganography that supports adaptive model updates at the sender.
